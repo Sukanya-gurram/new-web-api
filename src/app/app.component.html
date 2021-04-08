@@ -1,0 +1,32 @@
+<marquee direction="right" scrollamount="15">
+    <h1> WELCOME TO MY APP</h1>
+</marquee>
+<nav class="navbar navbar-expand-sm bg-dark navbar-whitesmoke color-black">
+    <!-- Brand -->
+    <a class="navbar-brand" routerLink="logo" style="color:whitesmoke;">Logo</a>
+
+    <!-- Links -->
+    <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link" routerLink="home" style="color:whitesmoke">Home</a>
+        </li>&nbsp;
+        <li class="nav-item">
+            <a class="nav-link" routerLink="contactus" style="color:whitesmoke;">Contact Us</a>
+        </li>&nbsp;
+        <li class="nav-item">
+            <a class=" nav-link " routerLink="aboutus" style="color:whitesmoke;">About Us</a>
+        </li>&nbsp;
+
+        <!-- Dropdown -->
+        <li class="nav-item dropdown " style="color:whitesmoke; ">
+            <a class="nav-link dropdown-toggle " style="color:whitesmoke;" routerLink="technologies" id=" navbardrop " data-toggle="dropdown">
+      Technologies </a>
+            <div class="dropdown-menu ">
+                <a class="dropdown-item " routerLink="technologies/javascript"> JavaScript </a>
+                <a class="dropdown-item " routerLink="technologies/typescript"> TypeScript </a>
+                <a class="dropdown-item " routerLink="technologies/angularjavascript"> Angular JavaScript </a>
+            </div>
+        </li>
+    </ul>
+</nav>
+<router-outlet></router-outlet>
